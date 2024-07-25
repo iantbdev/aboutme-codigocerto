@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import HashLoader from "react-spinners/HashLoader";
 import { Typewriter } from "react-simple-typewriter";
+import Preloader from "./components/Pre-Loader/preloader";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -14,7 +14,6 @@ function App() {
       setLoading(false);
     }, 5000);
 
-    // Limpar o timer quando o componente desmontar
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,23 +28,26 @@ function App() {
   return (
     <div>
       {loading ? (
-        <HashLoader size={50} color={"#e53939"} loading={loading} />
+        <Preloader loading={loading} />
       ) : (
-        <h1>
-          <Typewriter
-            words={[
-              "Olá, sou Ian!",
-              "Sou estudante e desenvolvedor",
-              "Bem vindo à minha página! :)",
-            ]}
-            loop={2}
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
-        </h1>
+        <div>
+          <h1>
+            <Typewriter
+              words={[
+                "Olá, sou Ian!",
+                "Sou estudante e desenvolvedor",
+                "Bem vindo à minha página! :)",
+              ]}
+              loop={2}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h1>
+          <span>(Scrolla pra baixo)</span>
+        </div>
       )}
     </div>
   );
