@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Typewriter } from "react-simple-typewriter";
 import Preloader from "./components/Pre-Loader/preloader";
+import Cards from "./components/Cards/cards";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [index, setIndex] = useState(0);
   const words = ["Estudante", "Programador", "Desenvolvedor"];
 
   useEffect(() => {
-    setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
     }, 5000);
@@ -26,11 +26,11 @@ function App() {
   }, [words.length]);
 
   return (
-    <div>
+    <div className="app-container">
       {loading ? (
         <Preloader loading={loading} />
       ) : (
-        <div>
+        <div className="content-container">
           <h1>
             <Typewriter
               words={[
@@ -49,6 +49,8 @@ function App() {
           <span>(Scrolla pra baixo)</span>
         </div>
       )}
+      {!loading && <Cards />}{" "}
+      {/* Renderiza o componente Cards somente após o carregamento */}
     </div>
   );
 }
