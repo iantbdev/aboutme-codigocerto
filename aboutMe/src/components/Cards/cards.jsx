@@ -153,7 +153,7 @@ export default function Cards() {
             }}
           >
             <a
-              href="www.linkedin.com/in/ian-dionísio-8a9630250"
+              href="https://www.linkedin.com/in/ian-dion%C3%ADsio-8a9630250/"
               target="_blank"
               rel="noopener noreferrer"
             >
