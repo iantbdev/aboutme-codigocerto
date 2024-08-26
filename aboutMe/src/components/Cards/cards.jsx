@@ -93,7 +93,7 @@ export default function Cards() {
 
         <ParallaxLayer
           offset={2.0}
-          speed={2}
+          speed={1.5}
           style={{
             ...alignCenter,
             justifyContent: "center",
@@ -141,7 +141,7 @@ export default function Cards() {
 
         <ParallaxLayer
           offset={4}
-          speed={0.5}
+          speed={2.0}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
           <h1>É só isso... por enquanto</h1>
