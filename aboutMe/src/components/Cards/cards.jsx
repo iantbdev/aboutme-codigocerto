@@ -24,12 +24,6 @@ export default function Cards() {
     justifyContent: "flex-start",
   };
 
-  const alignRight = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end",
-  };
-
   return (
     <div>
       <Parallax pages={5} style={{ top: "0", left: "0" }}>
@@ -133,8 +127,9 @@ export default function Cards() {
           style={{
             ...alignCenter,
             justifyContent: "center",
-            backgroundColor: "#000",
+            backgroundColor: "#e53939",
             color: "#ffffff",
+            height: "900px",
           }}
         >
           <h2>Motivações</h2>
