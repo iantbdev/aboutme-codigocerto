@@ -87,8 +87,8 @@ export default function Cards() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={1.75}
-          speed={2}
+          offset={1.9}
+          speed={0.9}
           style={{
             ...alignCenter,
             justifyContent: "center",
@@ -98,8 +98,8 @@ export default function Cards() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={1.9}
-          speed={0.5}
+          offset={2.0}
+          speed={2}
           style={{
             ...alignCenter,
             justifyContent: "center",
@@ -113,25 +113,8 @@ export default function Cards() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={3.5}
-          speed={1.2}
-          style={{
-            ...alignCenter,
-            justifyContent: "center",
-            backgroundColor: "#e53939",
-            color: "#ffffff",
-          }}
-        >
-          <h2>Motivações</h2>
-          <span>
-            Por que eu quero participar da comunidade Codigo Certo Coders?
-          </span>
-          <Motivation />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={2.2}
-          speed={1}
+          offset={2.8}
+          speed={0.8}
           style={{
             ...alignLeft,
             justifyContent: "center",
@@ -145,19 +128,20 @@ export default function Cards() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={2.8}
-          speed={0.15}
+          offset={3.0}
+          speed={1.2}
           style={{
-            ...alignRight,
-
+            ...alignCenter,
             justifyContent: "center",
+            backgroundColor: "#000",
+            color: "#ffffff",
           }}
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/256/11218/11218277.png"
-            alt="Interrogação"
-            style={{ marginRight: "20px" }}
-          />
+          <h2>Motivações</h2>
+          <span>
+            Por que eu quero participar da comunidade Codigo Certo Coders?
+          </span>
+          <Motivation />
         </ParallaxLayer>
 
         <ParallaxLayer
