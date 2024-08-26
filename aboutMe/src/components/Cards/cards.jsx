@@ -133,7 +133,7 @@ export default function Cards() {
           }}
         >
           <h2>Motivações</h2>
-          <span style={{ padding: "2rem" }}>
+          <span style={{ padding: "0px 2rem 0px 2rem" }}>
             Por que eu quero participar da comunidade Codigo Certo Coders?
           </span>
           <Motivation />
